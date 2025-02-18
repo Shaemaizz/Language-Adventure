@@ -1,11 +1,10 @@
-
-         // Game Logic (JavaScript)
+ // Game Logic (JavaScript)
         let score = 0;
         let currentStage = 0;
         let currentQuestionIndex = 0;
         let wrongAttempts = 0;
         let marketQuestions = [
-          { question: "On your way to the market, Omar suddenly had to leave due to an emergency, so you ended up heading to the market on your own. Before parting, Omar said, \"People in the market usually like to ask questions, and those questions are often meant to test your skills in Arabic. You know, I’m not a local here myself, so I’ve struggled a bit too, but i've got the hang out of it. Trust me, answering their questions will help you a lot and improve your Arabic as well, so you won’t have a hard time communicating. Translate 'Apple' to Arabic (Pronunciation: Tuffāḥ)", answer: 'تفاح' },
+            { question: "On your way to the market, Omar suddenly had to leave due to an emergency, so you ended up heading to the market on your own. Before parting, Omar said, \"People in the market usually like to ask questions, and those questions are often meant to test your skills in Arabic. You know, I’m not a local here myself, so I’ve struggled a bit too, but i've got the hang out of it. Trust me, answering their questions will help you a lot and improve your Arabic as well, so you won’t have a hard time communicating. Translate 'Apple' to Arabic (Pronunciation: Tuffāḥ)", answer: 'تفاح' },
             { question: "Translate 'Dog' to Arabic(Pronunciation: Kalb)", answer: 'كلب' },
             { question: "Translate 'Book' to Arabic(Pronunciation: Kitāb)", answer: 'كتاب' },
             { question: "Translate 'House' to Arabic(Pronunciation: Manzil)", answer: 'منزل' },
@@ -199,17 +198,18 @@
         }
 
         // Function to reset the game and go back to the start
-        function end() {
+        function goBackToStar() {
             currentStage = 0; 
-            score = 0;        
+            score += 10;        
             currentQuestionIndex = 0;
             wrongAttempts = 0;
 
             document.getElementById("score").innerText = score;
             changeBackground('https://i.postimg.cc/q7Zhnc3v/Screenshot-2025-02-17-210538.png'); 
-            displayText("You have succesfully reached the end i hope u learned something new! (refresh if u want to redo it again).");
+            displayText("You have succesfully reached the end i hope u learned something new!.");
             document.getElementById("start-button").style.display = 'block'; 
             document.getElementById("choices-container").innerHTML = ''; 
         }
     
+
 
