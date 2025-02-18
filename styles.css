@@ -1,0 +1,53 @@
+/* General styling */
+body {
+    background-image: url('https://i.postimg.cc/q7Zhnc3v/Screenshot-2025-02-17-210538.png'); /* Updated background image */
+    background-size: cover; /* Ensure the image covers the entire window */
+    background-position: center; /* Center the background */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Main container for the game */
+#game-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    z-index: 2;
+    text-shadow: 0 0 5px #948247, 0 0 10px #000000;
+}
+
+/* Styling for game text */
+#game-text {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #ffffff;
+    text-shadow: 0 0 5px #000000, 0 0 10px #000000; /* Outline effect */
+}
+
+/* Styling for the buttons */
+button {
+    background-color: #948247;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+    z-index: 2;
+}
+
+button:hover {
+    background-color: #948247;
+}
+
+/* Styling for the button container */
+#choices-container {
+    margin-top: 20px;
+}
