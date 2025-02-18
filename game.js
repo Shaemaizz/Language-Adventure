@@ -165,7 +165,7 @@
         function askMarketQuestion() {
             if (currentQuestionIndex >= marketQuestions.length) {
                 displayText("As you reached the end of your shopping and answered Vendor's final question, he smiled warmly and said, \"You’ve done remarkably well today. I can see your Arabic has already improved! You’ve worked through all the questions in the market with great effort—well done!\" Feeling a sense of accomplishment, you thanked Vendor for his guidance and support. \"You’ve truly been a big help,\" you said with a grateful nod. Vendor chuckled. \"It was my pleasure. Helping others with language is what I enjoy most. Keep practicing, and soon you’ll be speaking like a local!\" With that, he bid you farewell, leaving you with newfound confidence and a stronger connection to the language. The words echoed in your mind as you walked away: You have completed all questions at the market. Great job.");
-                createChoice("Go Back to Start", goBackToStart);
+                createChoice("Go Back to Start", continueGame);
                 return;
             }
 
@@ -199,7 +199,7 @@
         }
 
         // Function to reset the game and go back to the start
-        function goBackToStart() {
+        function end() {
             currentStage = 0; 
             score = 0;        
             currentQuestionIndex = 0;
