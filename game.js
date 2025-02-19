@@ -4,20 +4,20 @@
         let currentQuestionIndex = 0;
         let wrongAttempts = 0;
         let marketQuestions = [
-            { question: "On your way to the market, Omar suddenly had to leave due to an emergency, so you ended up heading to the market on your own. Before parting, Omar said, \"People in the market usually like to ask questions, and those questions are often meant to test your skills in Arabic. You know, I’m not a local here myself, so I’ve struggled a bit too, but i've got the hang out of it. Trust me, answering their questions will help you a lot and improve your Arabic as well, so you won’t have a hard time communicating. Translate 'Apple' to Arabic (Pronunciation: Tuffāḥ)", answer: 'تفاح' },
-            { question: "Translate 'Dog' to Arabic(Pronunciation: Kalb)", answer: 'كلب' },
-            { question: "Translate 'Book' to Arabic(Pronunciation: Kitāb)", answer: 'كتاب' },
-            { question: "Translate 'House' to Arabic(Pronunciation: Manzil)", answer: 'منزل' },
-            { question: "Translate 'School' to Arabic(Pronunciation: Madrasa)", answer: 'مدرسة' },
-            { question: "Translate 'Pen' to Arabic(Pronunciation: Qalam)", answer: 'قلم' },
-            { question: "After browsing through some shops and picking up a few items, you noticed the locals eagerly testing your Arabic skills with various questions. Then,  a man approached you—a well-known figure in the town called \"Vendor.\" Renowned for his mastery of both English and Arabic, Vendor is famous for being able to translate anything with ease. With a warm smile, he offered, \"Do you need help with your language skills? I’d be happy to assist you.\" You were delighted by his offer, relieved to have someone who could both understand and guide you. As you continued your way through the shops, purchasing more items, Vendor stayed by your side. He kept asking you questions, each one a mix of challenge and encouragement. Yet, despite answering some, Vendor’s curiosity never seemed to run out, as he persistently kept testing your knowledge, eager to help you improve. Translate 'كرسي' to English (hint: You sit on it.) Pronunciation: Kursī", answer: 'Chair' },
-            { question: "Translate 'شمس' to English (hint: It shines brightly in the sky during the day.) Pronunciation: Shams ", answer: 'Sun' },
-            { question: "Translate 'قمر' to English (hint: It appears in the night sky and has phases.) Pronunciation: Qamar", answer: 'Moon' },
-            { question: "Translate 'ماء' to English (hint: You drink it to stay hydrated.) Pronunciation: Māʾ", answer: 'Water' },
-            { question: "Translate 'نار' to English (hint: It burns and provides heat.) Pronunciation: Nār ", answer: 'Fire' },
-            { question: "Translate 'قطة' to English (hint: A small, furry pet that meows.) Pronunciation: Qiṭṭa", answer: 'Cat' },
-            { question: "Translate 'عصفور' to English (hint: A creature with wings that can fly.) Pronunciation: ʿUṣfūr ", answer: 'Bird' },
-            { question: "Translate 'زهرة' to English (hint: A beautiful plant with petals, often fragrant.) Pronunciation: Zahra ", answer: 'Flower' },
+            { question: "On your way to the market, Omar suddenly had to leave due to an emergency, so you ended up heading to the market on your own. Before parting, Omar said, \"People in the market usually like to ask questions, and those questions are often meant to test your skills in Arabic. You know, I’m not a local here myself, so I’ve struggled a bit too, but i've got the hang out of it. Trust me, answering their questions will help you a lot and improve your Arabic as well, so you won’t have a hard time communicating. Translate <span class='highlight'>'Apple'</span> to Arabic (Pronunciation: Tuffāḥ)", answer: 'تفاح' },
+            { question: "Translate <span class='highlight'>'Dog'</span> to Arabic(Pronunciation: Kalb)", answer: 'كلب' },
+            { question: "Translate <span class='highlight'>'Book'</span> to Arabic(Pronunciation: Kitāb)", answer: 'كتاب' },
+            { question: "Translate <span class='highlight'>'House'</span> to Arabic(Pronunciation: Manzil)", answer: 'منزل' },
+            { question: "Translate <span class='highlight'>'School'</span> to Arabic(Pronunciation: Madrasa)", answer: 'مدرسة' },
+            { question: "Translate <span class='highlight'>'Pen'</span> to Arabic(Pronunciation: Qalam)", answer: 'قلم' },
+            { question: "After browsing through some shops and picking up a few items, you noticed the locals eagerly testing your Arabic skills with various questions. Then,  a man approached you—a well-known figure in the town called \"Vendor.\" Renowned for his mastery of both English and Arabic, Vendor is famous for being able to translate anything with ease. With a warm smile, he offered, \"Do you need help with your language skills? I’d be happy to assist you.\" You were delighted by his offer, relieved to have someone who could both understand and guide you. As you continued your way through the shops, purchasing more items, Vendor stayed by your side. He kept asking you questions, each one a mix of challenge and encouragement. Yet, despite answering some, Vendor’s curiosity never seemed to run out, as he persistently kept testing your knowledge, eager to help you improve. Translate <span class='highlight'>'كرسي'</span> to English (hint: You sit on it.) Pronunciation: Kursī", answer: 'Chair' },
+            { question: "Translate <span class='highlight'>'شمس'</span> to English (hint: It shines brightly in the sky during the day.) Pronunciation: Shams ", answer: 'Sun' },
+            { question: "Translate <span class='highlight'>'قمر'</span> to English (hint: It appears in the night sky and has phases.) Pronunciation: Qamar", answer: 'Moon' },
+            { question: "Translate <span class='highlight'>'ماء'</span> to English (hint: You drink it to stay hydrated.) Pronunciation: Māʾ", answer: 'Water' },
+            { question: "Translate <span class='highlight'>'نار'</span> to English (hint: It burns and provides heat.) Pronunciation: Nār ", answer: 'Fire' },
+            { question: "Translate <span class='highlight'>'قطة'</span> to English (hint: A small, furry pet that meows.) Pronunciation: Qiṭṭa", answer: 'Cat' },
+            { question: "Translate <span class='highlight'>'عصفور'</span> to English (hint: A creature with wings that can fly.) Pronunciation: ʿUṣfūr ", answer: 'Bird' },
+            { question: "Translate <span class='highlight'>'زهرة'</span> to English (hint: A beautiful plant with petals, often fragrant.) Pronunciation: Zahra ", answer: 'Flower' },
         ];
 
         let townExplorationText = [
