@@ -51,3 +51,7 @@ button:hover {
 #choices-container {
     margin-top: 20px;
 }
+/* Styling for highlighted words */
+.highlight {
+    color: #FFD700; /* Example color, you can choose any color */
+}
