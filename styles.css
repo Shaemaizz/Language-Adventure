@@ -52,6 +52,6 @@ button:hover {
     margin-top: 20px;
 }
 /* Styling for highlighted words */
-.highlight {
-    color: #FFD700; /* Example color, you can choose any color */
+highlight {
+    color: #880808; /* Example color, you can choose any color */
 }
