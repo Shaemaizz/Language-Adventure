@@ -133,7 +133,7 @@
 
         // Continue the game
         function continueGame() {
-            displayText("Omar: 'Since you're new around here, do you want to take a look around the town?. Do you want to explore the town or go to the market first?'");
+            displayText("Omar: 'Since you're new around here, do you want to take a look around the town?. Do you want to explore the town or go to the market first? I'd highly recommend checking out the Market first. You’ll probably learn something useful before heading into town and dealing with people there.'");
             createChoice("Explore Town", exploreTown);
             createChoice("Go to Market", goToMarket);
         }
